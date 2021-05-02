@@ -18,9 +18,36 @@
 					"formdata": [
 						{
 							"key": "file",
-							"value": "",
 							"description": "",
-							"type": "file"
+							"type": "file",
+							"src": "workflow_example.json"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Upload file example without multiple transaction allowed",
+			"request": {
+				"url": "http://127.0.0.1:8000/workflow/",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"description": "",
+							"type": "file",
+							"src": "workflow_example.json"
+						},
+						{
+							"key": "multiple_transitions",
+							"value": "false",
+							"description": "",
+							"type": "text"
 						}
 					]
 				},
