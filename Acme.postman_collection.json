@@ -1,0 +1,32 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Acme",
+		"_postman_id": "1eaebd4f-0db0-f19d-c5e1-dd90d148eab5",
+		"description": "ACME Workflow",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Upload file example",
+			"request": {
+				"url": "http://127.0.0.1:8000/workflow/",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"value": "",
+							"description": "",
+							"type": "file"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
